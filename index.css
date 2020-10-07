@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.whole {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(./img/homeBack.jpg);
+    background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    z-index: 1;
+}
+
+.whole ::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.logo img {
+    height: 5vh;
+    width: 20vw;
+}
+
+section {
+    margin-left: 30vw;
+    margin-top: 35vh;
+}
+
+section .heading h1 {
+    font-size: 4rem;
+    color: #f685a1;
+    font-weight: 900;
+}
+
+section .heading h2 {
+    font-size: 3rem;
+    color: #f685a1;
+}
+
+section .heading h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #f685a1;
+    height: 5vh;
+    display: flex;
+}
+
+.navLinks {
+    display: flex;
+    flex: 2;
+    margin-left: auto;
+    height: 10vh;
+    font-size: 1.8rem;
+    list-style: none;
+    color: crimson;
+    justify-content: space-around;
+    align-items: cemter;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 1.8rem;
+}
+
+footer {
+    position: absolute;
+    top: 75vh;
+    width: 100vw;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 30vh;
+    grid-column-gap: 2vw;
+}
+
+.box {
+    background-color: pink;
+    text-align: center;
+    margin-top: 2vh;
+    border-radius: 20%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px black;
+    transition: ease-in-out 0.5s;
+}
+
+.box img {
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.box h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box h3 {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border: 0.125rem solid #3498db;
+    padding: 1rem 3rem;
+    outline: none;
+    color: white;
+    border-radius: 1.5rem;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background: #3498db;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:720px) {
+    section {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this project helps people to automate the whole industry's inventory ,which includes activities from manufacturing to retailing of a product." />
+    <link rel="stylesheet" href="./index.css">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Inventory Management Control System</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./img/logoedit.jpeg">
+        </div>
+        <ul class="navLinks">
+            <li class="navLink"><a href="#">Home</a></li>
+            <li class="navLink"><a href="./inventory.html">Inventory</a></li>
+            <li class="navLink"><a href="./signup.html">logut</a></li>
+        </ul>
+
+    </nav>
+    <div class="whole">
+        <section>
+            <div class="heading">
+                <h1> AIMS</h1>
+                <h2>Automated Inventory Control System</h2>
+                <h3>Automate the inventory of industries from manufacturing to distribution and delivery </h3>
+            </div>
+            <button><a href="./inventory.html">Inventory</a></button>
+        </section>
+    </div>
+    <footer>
+        <div class="cards">
+            <div class="category box">
+                <img src="./img/CC.jpeg">
+                <h2>category</h2>
+                <h3>to select Add or Remove Categories Click Here</h3>
+
+            </div>
+            <div class="products box">
+                <img src="./img/PP.jpeg" alt="">
+                <h2>products</h2>
+                <h3>to select Add or Remove products Click Here</h3>
+            </div>
+            <div class="brands box">
+                <img src="./img/BB2.jpeg" alt="">
+                <h2>Brands</h2>
+                <h3>to select Add or Remove Brands Click Here</h3>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll('.box');
+    portfolioitems.addEventListener('mouseover', () => {
+        console.log(portfolioitems.classList);
+        portfolioitems.classList.add('img-darken');
+    });
+    portfolioitems.addEventListener('mouseout', () => {
+        console.log(portfolioitems.classList);
+        portfolioitems.classList.remove('img-darken');
+    });
+</script>
+
+</html>

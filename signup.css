@@ -1,0 +1,135 @@
+body {
+    background-image: url(./img/loginback.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head {
+    color: #f80a32;
+    text-shadow: 3px 1px 5px yellow;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 8vh;
+}
+
+h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box {
+    width: 19rem;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    opacity: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: black;
+    text-align: center;
+    box-shadow: 0px 50px 50px;
+}
+
+div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.label-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0rem 0rem 0.2rem 3.2rem;
+    color: #3498db;
+}
+
+
+/* .box input:empty + .label-name {
+  color: #8f8c8c;
+  margin: 0rem 0rem 1.2rem 2.3rem;
+} */
+
+.box input:focus+.label-name {
+    color: #8f8c8c;
+    margin: 0rem 0rem 1.2rem 2.3rem;
+    transition: 0.5s;
+}
+
+
+/* .box input:not(:focus):enabled + .label-name {
+  color: #8f8c8c;
+  margin: 0rem 0rem 1.2rem 2.3rem;
+  transition: 0.5s;
+} */
+
+.box input[type="text"],
+.box input[type="password"] {
+    font-weight: bold;
+    color: black;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 3rem auto;
+    padding-left: 0.5rem;
+    border-bottom: 0.125rem solid #8f8c8c;
+    width: 12.5rem;
+    outline: none;
+    border-radius: 1rem;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 13.8rem;
+    border-color: #3498db;
+    color: black;
+    transition: 0.5s;
+    /* caret-color: transparent; */
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border: 0.125rem solid #3498db;
+    padding: 0.75rem 2.5rem;
+    outline: none;
+    color: white;
+    border-radius: 1.5rem;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.box input[type="submit"]:hover {
+    background: #3498db;
+    text-transform: uppercase;
+}
+
+.box input[type="submit"]:focus {
+    background: #8f8c8c;
+}
+
+input:focus::placeholder {
+    color: #8f8c8c;
+    cursor: default;
+}
+
+input::placeholder {
+    color: #3498db;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-size: 150vh;
+        background-position-x: 50%;
+    }
+}
